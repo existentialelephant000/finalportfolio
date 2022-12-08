@@ -1,0 +1,48 @@
+.home{
+    font-family: 'Montserrat', sans-serif;
+}
+.welcome{
+    margin: 15vw 10vw 30vw 10vw;
+}
+.intro{
+    max-width: 30vw;
+    font-size: 20px;
+}
+.myWork{
+    text-align: left;
+    margin: 5vw 0 5vw 3vw;
+}
+.otitle{
+    color: #7393F8;
+    font-weight: 700;
+    font-size: 30px;
+}
+.abtitle{
+    color: #BF4F5B;
+    font-weight: 700;
+    font-size: 30px;
+}
+.rtitle{
+    color: #F09644;
+    font-weight: 700;
+    font-size: 30px;
+}
+.stitle{
+    color: #4CD783;
+    font-weight: 700;
+    font-size: 30px;
+}
+.project{
+    margin-bottom: 2vw;
+    max-width: 45vw;
+}
+.card{
+    max-width: 45vw ;
+    border-radius: 30px;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
