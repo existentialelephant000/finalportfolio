@@ -1,16 +1,19 @@
-import ozone from "./images/ozone.png";
-import ozoneColor from "./images/ozoneColor.png"
+import ozoneFigma from "./images/ozoneFigma.png";
+import userTesting1 from "./images/userTesting1.png";
+import userTesting2 from "./images/userTesting2.png";
+import ozoneColor from "./images/ozoneColor.png";
 import lockscreen from "./images/lockscreen.png";
 import chatscreen from "./images/chatscreen.png";
-import ProjHeader from "./components/ProjHeader"
-import './Ozone.css'
+import ProjHeader from "./components/ProjHeader";
+import './Ozone.css';
 
 export function Ozone() {
     return (
         <>
         <div class="ozone">
+            <br/>
             <div>
-                <h1 style={{fontSize: '75px', display: 'inline-block'}}>ozone</h1>
+                <h1 style={{fontSize: '75px', display: 'inline-block'}}>iterative design</h1>
                 <img style={{ display: 'inline-block', maxHeight:'3vw', marginLeft:'3vw'}} src={ozoneColor} />
             </div>
             <br/>
@@ -34,9 +37,9 @@ export function Ozone() {
             <br/>
             <div class="designChoices">
                 <div>
-                    <img class="image" style={{display: 'block'}} src={lockscreen} alt="lock screen from figma"/>
+                    <img class="image" src={lockscreen} alt="lock screen from figma"/>
                     <br/>
-                    <img class="image" style={{display: 'block'}} src={chatscreen} alt="chat screen from figma"/>
+                    <img class="image" src={chatscreen} alt="chat screen from figma"/>
                 </div>
                 <div class="designChoicesText">
                     <ProjHeader title="design choices"/>
@@ -47,6 +50,37 @@ export function Ozone() {
                         if a user locks a video or audio file, it prevents other users from editing it at the same time. This helps eliminate 
                         potential issues with contiguous editing. This would hopefully make the workflow smoother, since each user wouldn’t have 
                         to constantly refresh the project after any edit is made.</p>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="designChoices">
+                <div class="designChoicesText">
+                    <ProjHeader title="user testing" text="Using UserTesting.com, we had real people use our interface to give us feedback
+                        and suggestions. We found these incredibly helpful when making finishing touches to our final prototype.
+                        Here were the instructions we gave them:"/>
+                    <br/>
+                    <p> Hello! Ozone is a video editing tool that enables collaboration, similar to Figma or Google Docs. 
+                        Our interface is not a website — it is a prototype of a website made using Figma. It has limited 
+                        functionality, most of the buttons do not work. With this in mind, please complete the following 
+                        tasks to the best of your ability and then answer the post-testing questionnaire. We encourage you 
+                        to think aloud as you complete the tasks. Thank you!</p>
+                    <li>Login to the website</li>
+                    <li>Create a new project</li>
+                    <li>Open the chat</li>
+                    <li>Close the chat</li>
+                    <li>Open the video chat</li>
+                    <li>Close the video chat</li>
+                    <li>Enter full-screen mode</li>
+                    <li>Exit full-screen mode</li>
+                    <li>Navigate to the “Main Audio Theme” folder</li>
+                </div>
+                <div>
+                    <img class="image" src={userTesting2} alt="lock screen from figma"/>
+                    <br/>
+                    <img class="image" src={userTesting1} alt="chat screen from figma"/>
+                    <br/>
+                    <img class="image" src={ozoneFigma} alt="chat screen from figma"/>
                 </div>
             </div>
             <br/>

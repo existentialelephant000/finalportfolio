@@ -2,11 +2,26 @@
     font-family: 'Montserrat', sans-serif;
 }
 .welcome{
-    margin: 15vw 10vw 30vw 10vw;
+    display: block;
+    margin: 12vw 0vw 12vw 10vw;
+
+}
+.welcomeTitle{
+    font-size: 80px;
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.photo{
+    max-width: 40vw;
+    margin-left: 10vw;
 }
 .intro{
     max-width: 30vw;
     font-size: 20px;
+    animation: fadeIn 3s;
 }
 .myWork{
     text-align: left;
@@ -39,6 +54,9 @@
 .card{
     max-width: 45vw ;
     border-radius: 30px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    z-index: 1;
 }
 
 .projects{
@@ -46,3 +64,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.overlay:hover .card {
+    opacity: 0.6;
+  }  

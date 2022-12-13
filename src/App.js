@@ -25,6 +25,7 @@ function App() {
       </div>
     </div>
     <Routes>
+      {/* INTERNAL LINKS */}
       <Route path="/" element={ <Home/> }/>
       <Route path="/Ozone" element={ <Ozone/> }/>
       <Route path="/AB" element={ <AB/> }/>
@@ -32,6 +33,8 @@ function App() {
       <Route path="/Contact" element={ <Contact/> }/>
       <Route path="/Search" element={ <Search/> }/>
       <Route path="/About" element={ <About/> }/>
+
+      {/* EXTERNAL LINKS */}
     </Routes>
     </>
   );
