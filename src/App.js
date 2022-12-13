@@ -27,6 +27,7 @@ function App() {
     <Routes>
       {/* INTERNAL LINKS */}
       <Route path="/" element={ <Home/> }/>
+      <Route path="/finalportfolio" element={ <Home/> }/>
       <Route path="/Ozone" element={ <Ozone/> }/>
       <Route path="/AB" element={ <AB/> }/>
       <Route path="/Responsive" element={ <Responsive/> }/>
